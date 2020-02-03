@@ -1680,6 +1680,63 @@ storeFile=&lt;location of the key store file, such as /Users/&lt;user name&gt;/k
 <div class="magic-block-textarea"><p>Release builds of your app will now be signed automatically.</p>
 
 </div>
+
+
+<div class="magic-block-api-header">
+  <h1 class="header-scroll is-api-header"><span id="build-apk"></span>
+    <div id="section-build-apk" class="anchor waypoint"></div>Change App Icon<a href="#section-build-apk" class="fa fa-anchor"></a>
+  </h1>
+</div>
+<div class="magic-block-textarea"><p>Place your icon inside of your assets/images/icon.png folder, or a similar folder of your choosing. Then, inside of pubspec.yaml, you will need to provide the flutter_icons configuration option:</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+  <ul class="block-code-header">
+    <li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Text</a></li>
+  </ul>
+  <div class="block-code-code"><!-- ngIf: tab == 0 --><span ng-if="tab == 0" class="ng-scope">
+      <button ng-click="copyCode(648)" class="copy-code-button"><span ng-show="!copied" class="fa fa-clipboard"></span><span ng-show="copied" class="fa fa-check ng-hide"></span></button>
+      <textarea ng-non-bindable="ng-non-bindable" style="position: absolute; left: -10000px;" id="text-code-648">flutter build apk</textarea>
+      <pre id="code-648"><code>flutter_icons:
+  image_path_ios: 'assets/images/heal.png'
+  image_path_android: 'assets/images/heal.png'
+  android: true
+  ios: true</code></pre></span><!-- end ngIf: tab == 0 -->
+  </div>
+</div>
+<div class="magic-block-textarea"><p>Inside of your terminal, run the following build script:</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+  <ul class="block-code-header">
+    <li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Text</a></li>
+  </ul>
+  <div class="block-code-code"><!-- ngIf: tab == 0 --><span ng-if="tab == 0" class="ng-scope">
+      <button ng-click="copyCode(648)" class="copy-code-button"><span ng-show="!copied" class="fa fa-clipboard"></span><span ng-show="copied" class="fa fa-check ng-hide"></span></button>
+      <textarea ng-non-bindable="ng-non-bindable" style="position: absolute; left: -10000px;" id="text-code-648">$ flutter pub run flutter_launcher_icons:main</textarea>
+      <pre id="code-648"><code>$ flutter pub run flutter_launcher_icons:main</code></pre></span><!-- end ngIf: tab == 0 -->
+  </div>
+</div>
+
+<div class="magic-block-textarea"><p>If everything worked correctly, you should see the following result:</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+  <ul class="block-code-header">
+    <li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Text</a></li>
+  </ul>
+  <div class="block-code-code"><!-- ngIf: tab == 0 --><span ng-if="tab == 0" class="ng-scope">
+      <button ng-click="copyCode(648)" class="copy-code-button"><span ng-show="!copied" class="fa fa-clipboard"></span><span ng-show="copied" class="fa fa-check ng-hide"></span></button>
+      <textarea ng-non-bindable="ng-non-bindable" style="position: absolute; left: -10000px;" id="text-code-648">flutter build apk</textarea>
+      <pre id="code-648"><code>Android minSdkVersion = 16
+Creating default icons Android
+Overwriting the default Android launcher icon with a new icon
+Overwriting default iOS launcher icon with new icon</code></pre></span><!-- end ngIf: tab == 0 -->
+  </div>
+</div>
+
+
+
 <div class="magic-block-api-header">
 	<h1 class="header-scroll is-api-header"><span id="build-apk"></span>
 		<div id="section-build-apk" class="anchor waypoint"></div>Build APK<a href="#section-build-apk" class="fa fa-anchor"></a>
